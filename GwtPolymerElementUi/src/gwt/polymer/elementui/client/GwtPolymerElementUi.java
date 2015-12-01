@@ -9,7 +9,11 @@ import com.google.gwt.user.client.ui.RootPanel;
 import com.vaadin.polymer.Polymer;
 import com.vaadin.polymer.elemental.Function;
 import com.vaadin.polymer.iron.element.IronIconElement;
+import com.vaadin.polymer.paper.element.PaperDrawerPanelElement;
+import com.vaadin.polymer.paper.element.PaperHeaderPanelElement;
 import com.vaadin.polymer.paper.element.PaperIconItemElement;
+import com.vaadin.polymer.paper.element.PaperRippleElement;
+import com.vaadin.polymer.paper.element.PaperToolbarElement;
 
 public class GwtPolymerElementUi implements EntryPoint {
     public void onModuleLoad() {
@@ -17,7 +21,11 @@ public class GwtPolymerElementUi implements EntryPoint {
 	Polymer.importHref(Arrays.asList(
 		"iron-icons/iron-icons.html",
 		PaperIconItemElement.SRC,
-		IronIconElement.SRC), new Function() {
+		IronIconElement.SRC,
+		PaperRippleElement.SRC,
+		PaperDrawerPanelElement.SRC,
+		PaperHeaderPanelElement.SRC,
+		PaperToolbarElement.SRC), new Function() {
 	    public Object call(Object arg) {
 		// The app is executed when all imports succeed.
 		startApplication();
