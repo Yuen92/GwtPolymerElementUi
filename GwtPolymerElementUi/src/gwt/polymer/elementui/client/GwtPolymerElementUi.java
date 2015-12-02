@@ -10,6 +10,7 @@ import com.vaadin.polymer.Polymer;
 import com.vaadin.polymer.elemental.Function;
 import com.vaadin.polymer.iron.element.IronIconElement;
 import com.vaadin.polymer.paper.element.PaperDrawerPanelElement;
+import com.vaadin.polymer.paper.element.PaperFabElement;
 import com.vaadin.polymer.paper.element.PaperHeaderPanelElement;
 import com.vaadin.polymer.paper.element.PaperIconItemElement;
 import com.vaadin.polymer.paper.element.PaperRippleElement;
@@ -25,7 +26,8 @@ public class GwtPolymerElementUi implements EntryPoint {
 		PaperRippleElement.SRC,
 		PaperDrawerPanelElement.SRC,
 		PaperHeaderPanelElement.SRC,
-		PaperToolbarElement.SRC), new Function() {
+		PaperToolbarElement.SRC,
+		PaperFabElement.SRC), new Function() {
 	    public Object call(Object arg) {
 		// The app is executed when all imports succeed.
 		startApplication();

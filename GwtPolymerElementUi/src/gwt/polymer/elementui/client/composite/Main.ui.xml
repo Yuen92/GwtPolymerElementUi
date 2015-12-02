@@ -2,7 +2,7 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
 	xmlns:g="urn:import:com.google.gwt.user.client.ui">
 	<g:HTMLPanel>
-		<style>
+		<style is='custom-style'>
 			.toolbar {
 				background: #4285f4 !important;
 			}
@@ -17,6 +17,12 @@
 			paper-icon-item {
 				position: relative;
 				overflow: hidden;
+			}
+			.add {
+				position: absolute;
+				bottom: 20px;
+				right: 20px;
+				--paper-fab-background: var(--paper-red-500);
 			}
 		</style>
 		<paper-drawer-panel ui:field="drawerPanel">
@@ -53,6 +59,7 @@
                     </paper-toolbar>
                     <div ui:field="content" class="content vertical center-justified layout"/>
                 </paper-header-panel>
+                <paper-fab ui:field="addButton" icon="add" title="add" class="add"/>
             </div>
 		</paper-drawer-panel>
 	</g:HTMLPanel>
